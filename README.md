@@ -1,70 +1,26 @@
-# Getting Started with Create React App
+# Dictionary App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple **React App** that will display the definition and example usage of any word typed in by the user.
 
-## Available Scripts
+This project used the Merriam Webster Dictionary API: [https://www.dictionaryapi.com](https://www.dictionaryapi.com), and is also dependent on an API Key. In particular, we use the following endpoint to retrieve data about a word: `https://www.dictionaryapi.com/api/v3/references/sd4/json/${enteredWord}?key=${API_KEY}`
 
-In the project directory, you can run:
+You will notice that the `API_KEY` is hard-coded into the `App.js` file.
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- `cd` into the React project folder containing the `packages.json` file.
+- From the command line interface, execute `npm install`. This should create a `node_modules` folder in the project directory.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Launching the Application
 
-### `npm test`
+- In the project directory, execute `npm start` from the command line. This should by default spin up a browser tab at [https://localhost:3000](https://localhost:3000).
+- From here, you should be able to interact with the Dictionary UI.
+  - Type your desired word into the input field, and press Enter.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Caution
 
-### `npm run build`
+It is possible for an entered word not to exist in the Dictionary Databases. It is therefore normal to encounter messages which state the `<word> does not exist in this dictionary.` In the same vein, it is not a given that an example usage exists for every word. In such a case, you will encounter: `No example usage could be obtained for this word`.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Creator
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<a href="https://github.com/HenriBranken" target="_blank">Henri Branken</a>

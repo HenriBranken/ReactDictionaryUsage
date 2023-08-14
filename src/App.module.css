@@ -1,0 +1,80 @@
+/* Default initialisation. */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Entry point to tweak the background color of the screen. */
+html {
+  background-color: rgb(27, 3, 27);
+}
+
+/* "English Dictionary" Heading */
+.Heading {
+  border-bottom: 4px solid black;
+  padding-bottom: 5px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/* A Wrapper for the App.js component. */
+.Container {
+  width: 28vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: middle;
+  align-items: center;
+  text-align: center;
+  border: solid 2px black;
+  padding: 1rem;
+  box-shadow: 0 5px 30px white;
+  margin: 10rem auto;
+  border-radius: 5px;
+  background: linear-gradient(145deg, khaki, paleturquoise, lightpink);
+}
+
+/* Enter your word + Input field */
+.Label {
+  margin: 1rem 0;
+}
+
+/* Input Field */
+.Field {
+  margin-left: 1rem;
+  font-size: 1rem;
+  padding: 5px;
+}
+
+/* The "Search" Button */
+.Button {
+  display: block;
+  margin: 0.5rem auto;
+  font-size: 1.3rem;
+  padding: 4px 6px;
+  background: aliceblue;
+  border: solid 1px black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Side-Effect. */
+.Button:hover {
+  background-color: khaki;
+}
+
+/* The Definition and/or Example Usage, OR an Error message. */
+.Content {
+  height: auto;
+  line-height: 1.75;
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+/* Targeting the first paragraph child. */
+.Content > p:first-child {
+  border-bottom: solid 1px black;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
