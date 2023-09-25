@@ -26,6 +26,8 @@ This project used the Merriam Webster Dictionary API: [https://www.dictionaryapi
 
 You will notice that the `API_KEY` is hard-coded into the `App.js` file.
 
+The main feature here is to create a React App that interacts with a third-party API to fetch data.
+
 <a id="installation"></a>
 
 ## Installation
